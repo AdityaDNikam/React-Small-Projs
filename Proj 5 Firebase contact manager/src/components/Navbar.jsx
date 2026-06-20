@@ -1,13 +1,13 @@
 import React from 'react'
 import FireBaselogo from "../assets/Photos/logos_firebase.svg"
 import { useContext } from 'react'
-import searchBarContext from '../assets/context/Search_barContaxt'
+import searchBarContext from '../assets/context/Search_barContext'
 
 function Navbar() {
     const [search, setSearch] = useContext(searchBarContext)
 
     const ChamgeHandler = () => {
-        console.log(setSearch)
+        console.log(search)
     }
     return (
         <div className='flex flex-col justify-center'>
