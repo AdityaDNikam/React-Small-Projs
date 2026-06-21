@@ -25,3 +25,7 @@ dist-ssr
 
 # Firebase config
 src/Config/firebase.js
+
+# Vite cache
+.vite/
+

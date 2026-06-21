@@ -6,6 +6,8 @@ import './App.css'
 import NoContacts from './components/NoContacts'
 import Navbar from './components/Navbar'
 import searchBarContaxt from './assets/context/Search_barContext'
+import ContactDet from './components/ContactDet'
+import AddContact from './components/AddContact'
 
 function App() {
   const [search, setSearch] = useState(null)
@@ -14,7 +16,9 @@ function App() {
     <searchBarContaxt.Provider value={[search, setSearch]}><div className="bg-black h-screen w-full flex justify-center">
       <div className='bg-gray-900 w-[500px] h-screen flex flex-col'>
         <Navbar />
-        <NoContacts />
+        <ContactDet />
+        {/* <NoContacts /> */}
+        <AddContact />
       </div>
     </div>
     </searchBarContaxt.Provider>
