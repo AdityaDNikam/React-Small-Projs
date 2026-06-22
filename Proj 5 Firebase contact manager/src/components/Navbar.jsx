@@ -6,9 +6,6 @@ import searchBarContext from '../assets/context/Search_barContext'
 function Navbar() {
     const [search, setSearch] = useContext(searchBarContext)
 
-    const ChamgeHandler = () => {
-        console.log(search)
-    }
     return (
         <div className='flex flex-col justify-center'>
             <div className="Fb-logo bg-white flex flex-wrap justify-center items-center my-[10px] rounded-md min-w-[380px] ml-[20px] mr-[20px]" >
